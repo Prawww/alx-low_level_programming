@@ -1,4 +1,4 @@
-#!/bin/bash
+#!usr/bin/g++
 #include<stdio.h>
 
 int main()
