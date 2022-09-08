@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * 
- * Return: 1
- */
+* main  -entry point
+*
+* Return: 1
+*/
 int main(void)
 {
 	fprintf(stderr, "%s", "and that piece of art is useful\"");
