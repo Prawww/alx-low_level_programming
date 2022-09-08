@@ -1,12 +1,16 @@
-#!/bin/bash
 #include<stdio.h>
 
-int main()
+/**
+ * main-entry point
+ *
+ * Return:0 (success)
+ */
+int main(void)
 {
-	printf("Size of a char:%d",sizeof(char));
-	printf("Size of an int:%d",sizeof(int ));
-	printf("Size of a long int:%d",sizeof(long int));
-	printf("Size of a long long int:%d",sizeof(long long int));
-	printf("Size of a float:%d",sizeof(float));
-	return 0;
+	printf("Size of a char:%lu",sizeof(char));
+	printf("Size of an int:%lu",sizeof(int));
+	printf("Size of a long int:%lu",sizeof(long int));
+	printf("Size of a long long int:%lu",sizeof(long long int));
+	printf("Size of a float:%lu",sizeof(float));
+	return (0);
 }
