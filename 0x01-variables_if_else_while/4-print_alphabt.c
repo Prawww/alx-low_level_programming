@@ -2,8 +2,7 @@
 
 /**
  * main - Entry point
- * Description: print that except q and e
- *
+ * Description: print that except q and e 
  * Return: 0 (success)
  */
 int main(void)
