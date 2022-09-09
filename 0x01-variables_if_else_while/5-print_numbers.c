@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main -entry point
+ * main -Entry point
  * Description: integer values
  *
- * return 0 (sucess)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -12,6 +12,6 @@ int main(void)
 
 	for (num = 0; num <= 9; num++)
 		printf("%d", num);
-	putchar('\n');
+	printf('\n');
 	return (0);
 }
