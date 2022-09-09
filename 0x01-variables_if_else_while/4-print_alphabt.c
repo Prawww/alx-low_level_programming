@@ -4,7 +4,7 @@
  * main - Entry point
  * Description: print that except q and e
  *
- * return 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 	for(c = 'a'; c <= 'z'; c++)
 	{
-		if (c == 'e' || c == 'q' )
+		if (c == 'e' || c == 'q')
 			continue;
 		putchar(c);
 	}
