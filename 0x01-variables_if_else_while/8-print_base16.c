@@ -7,13 +7,12 @@
  * return 0 (success)
  */
 int main(void)
-{
-	int num;
-	char c;
+{	char ch;
 
-	for (num = 48; num <= 57; num++)
-		putchar((char) num);
-	for (c = a; c <= f; c++)
-		putchar(c);
-	 
+	for (ch = '0'; ch <= '9'; ch++)
+		putchar(ch);
+	for (ch = 'a'; ch <= 'f'; ch++)
+		putchar(ch);
 	putchar('\n');
+	return (0);
+}
