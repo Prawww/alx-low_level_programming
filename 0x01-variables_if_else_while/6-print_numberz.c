@@ -4,7 +4,7 @@
  * main -entry point
  * Description: integer values
  *
- * return 0 (sucess)
+ * return: 0 (sucess)
  */
 int main(void)
 {
