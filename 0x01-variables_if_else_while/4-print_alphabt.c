@@ -9,12 +9,12 @@ int main(void)
 {
 	char c;
 
-	for(c = 'a'; c <= 'z'; c++)
+	for (c = 'a'; ch <= 'z'; c++)
 	{
 		if (c == 'e' || c == 'q')
 			continue;
-		putchar(c);
+		putchar(ch);
 	}
 	putchar('\n');
-	return  (0);
+	return (0);
 }
