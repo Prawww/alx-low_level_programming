@@ -2,18 +2,18 @@
 
 /**
  * main - Entry point
- * Description: print that except q and e 
+ * Description: print the alphabet except q and e
  * Return: 0 (success)
  */
 int main(void)
 {
-	char c;
+	char ch;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (c == 'e' || c == 'q')
+		if (ch == 'e' || ch == 'q')
 			continue;
-		putchar(c);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
