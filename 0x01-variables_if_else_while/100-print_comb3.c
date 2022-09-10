@@ -13,12 +13,15 @@ int main(void)
 		for (num2 = num1 + 1; num2 <= 57; num2++)
 		{				
 			putchar((char)num1);
-			putchar((char)num2);													if (num1 != 56)
-			{
-				putchar(',');														putchar(' ');
-			}
+			putchar((char)num2);											
+		}
+		if (num1 != 56)	
+		{
+			putchar(',');						
+			putchar(' ');	
 		}	
 	}	
+		
 	putchar('\n');
 	return (0);
 }
