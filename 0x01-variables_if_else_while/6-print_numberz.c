@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main -entry point
+ * main -Entry point
  * Description: integer values
- *
- * return: 0 (sucess)
+ * Return: 0 (success)
  */
 int main(void)
 {
