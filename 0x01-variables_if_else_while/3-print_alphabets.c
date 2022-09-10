@@ -6,7 +6,7 @@
  * and then in uppercase
  * Return: 0 (success)
  */
-int main()
+int main(void)
 {	
 
 	char c;
