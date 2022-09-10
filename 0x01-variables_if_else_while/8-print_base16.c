@@ -3,7 +3,6 @@
 /**
  * main -entry point
  * Description: hexadecimal numbers
- *
  * return 0 (success)
  */
 int main(void)
