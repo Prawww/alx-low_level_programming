@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main -entry point
+ * main -Entry point
  * Description: hexadecimal numbers
- * return 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {	char ch;
