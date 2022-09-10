@@ -2,35 +2,29 @@
 
 /**
  * main- entry point
- *
  * Description: print combi of 3
  * return: 0 (success)
  */
 int main(void)
-{int num1, num2, num3;
+{
+	int num1, num2, num3;
 
-	num1 = 48;
-	while (num1 <= 55)
+	for (num1 = 48; num1 <= 56; num1++)
 	{
-		num2 = num1 + 1;
-		while (num2 <= 56)
+		for (num2 = num1 + 1; num2 <= 57; num2++)
 		{
-			num3 = num2 + 1;
-			while (num3 <= 57)
+			for(num3 = num2++; num3 <= 58; num3++)
 			{
 				putchar((char)num1);
 				putchar((char)num2);
 				putchar((char)num3);
-				if (num1 != 55)
+		       		if(num1 != 56)
 				{
-					putchar(',');
-					putchar(' ');
+		       			putchar(',');
+			       		putchar(' ');
 				}
-				num3++;
 			}
-			num2++;
 		}
-		num1++;
 	}
 	putchar('\n');
 	return (0);
