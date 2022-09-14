@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * Description: print all the alphabets
- * Return: 0 (Success)
+ * print_alphabet - check the code for main header files.
+ *   
+ * Return: Always 0.
  */
 void print_alphabet(void)
 {
