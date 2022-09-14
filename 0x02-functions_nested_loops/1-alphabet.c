@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
- * print_alphabet - check the code for main header files.
- *   
+ * print_alphabet - check the code for main header files. 
  * Return: Always 0.
  */
 void print_alphabet(void)
 {
 	char c;
-	
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
