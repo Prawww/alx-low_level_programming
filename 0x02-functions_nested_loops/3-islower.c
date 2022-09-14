@@ -2,6 +2,7 @@
 
 /**
  * _islower - check if a character is lower
+ * @c: letter being tested
  * Return: 1 (Success)
  */
 int _islower(int c)
@@ -9,6 +10,6 @@ int _islower(int c)
 
 	if (c >= 'a' && c <= 'z')
 		return (1);
-	else 
+	else
 		return (0);
 }
