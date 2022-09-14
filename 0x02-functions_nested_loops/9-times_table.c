@@ -6,11 +6,9 @@
  */
 void times_table(void)
 {
-	int n, i, j, product;
+	int i, j, product;
 
-	if (n >= 0 && n <= 9)
-	{
-		for (i = 0; i <= n; ++i)
+		for (i = 0; i <= 9; ++i)
 		{
 			for (j = 0; j <= n; ++j)
 			{
@@ -34,5 +32,5 @@ void times_table(void)
 			_putchar('\n');
 			}
 		}
-	}
+	
 }
