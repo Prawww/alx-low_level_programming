@@ -4,8 +4,6 @@
  * print_sign - print sign of a number
  * @n: number being tested
  * Return: 1 (Greater)
- * Return: 0 (zero)
- * Return: -1 (less)
  */
 int print_sign(int n)
 {
