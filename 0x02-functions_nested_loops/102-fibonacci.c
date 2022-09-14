@@ -14,13 +14,13 @@ int main(void)
 	prev = 1;
 	curr = 2;
 	printf("%ld, %ld, ", prev, curr);
-	while (i <= 50)
+	while (i <= 48)
 	{
 		temp = curr;
 		curr += prev;
 		prev = temp;
 		printf("%ld", curr);
-		if (i != 50)
+		if (i != 48)
 			printf(", ");
 		++i;
 	}
