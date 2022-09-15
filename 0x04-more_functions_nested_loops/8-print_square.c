@@ -4,7 +4,7 @@
  * print_square - print square of certain size
  * @size: the size
  */
-void print_squaare(int size)
+void print_square(int size)
 {
 	int i, j;
 
