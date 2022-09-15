@@ -3,7 +3,6 @@
 /**
  * print_line - draw a straight line
  * @n - the times the  _ will be drawn
- * Return: 0 (success)
  */
 void print_line(int n)
 {
