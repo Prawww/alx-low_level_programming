@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	for (i =0; i <= 100; i++)
+	for (i =0 ; i <= 100; i++)
 	{
 		printf(" ");
 		if (i % 3 == 0)
