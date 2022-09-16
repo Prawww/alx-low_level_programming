@@ -3,10 +3,11 @@
 /**
  * print_triangle - prints a triangle
  * @size: Determines how big the triangle
- */
+*/
 void print_triangle(int size)
 {
 	int i, j;
+
 	if (size < 1)
 		_putchar('\n');
 	else
@@ -15,7 +16,7 @@ void print_triangle(int size)
 		{
 			for (j = 1; j <= size; j++)
 			{
-				if ((j <= size - 1))
+				if ((j <i = size - 1))
 				{
 					_putchar(32);
 				}
