@@ -3,8 +3,8 @@
 
 /**
  * print_array - print n values of an array
- * @a:
- * @n
+ * @a: the sring
+ * @n: the count
  */
 void print_array(int *a, int n)
 {
