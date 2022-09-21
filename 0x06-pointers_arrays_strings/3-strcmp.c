@@ -6,7 +6,7 @@
  * @s2: - pointer
  * Return: character pointer
  */
-int _strcmp(char *s1, char *src)
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 	int R;
