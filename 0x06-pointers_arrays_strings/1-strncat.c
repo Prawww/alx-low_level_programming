@@ -1,29 +1,28 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * *_strncat - append but limit the number of bytes
- * @dest: - the initial string
- * @src: - the string to be added
- * Return: character
+ * _strncat - concatenate two strings by using number of bytes
+ * specified from the source
+ *
+ * @dest: string to be copied to
+ * @src: string to copy
+ * @n: number of bytes to copy
+ *
+ * Return: the destination string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0;
-	int j = 0;
+	int i, j;
 
+	i = 0;
 	while (dest[i] != '\0')
-	{
-		i++;
-	}
-
-	while (src[j] != '\0' && src[j] < src[n])
+		++i;
+	j = 0;
+	while (src[j] != '\0' && j < n)
 	{
 		dest[i] = src[j];
-		i++;
-		j++;
-
-		if (j < n)
-			dest[i] = '\0';
+		++j;
+		++i;
 	}
-	return dest;
+	return (dest);
 }
