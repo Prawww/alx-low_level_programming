@@ -4,7 +4,7 @@
  * *_strncpy -copy a string
  * @dest: initial string
  * @src: copied string
- * @n: 
+ * @n: int variable 
  * Return: character
  */
 char *_strncpy(char *dest, char *src, int n)
