@@ -1,23 +1,50 @@
 #include "main.h"
-#include <stdio.h>
+
+int is_separator(char ch);
+/**
+ * cap_string - capitalize all words of a string
+ *
+ * @str: string to be processed
+ *
+ * Description: use the following as separators of words
+ *              space, tab, new line or from the set ,.;!?"(){}
+ *
+ * Return: the resultant string
+ */
+char *cap_string(char *str)
+{
+	int i;
+
+	i = 0;
+	if (str[i] >= 97 && str[i] <= 122)
+		str[i] -= 32;
+	for (i = 1; str[i] != '\0'; ++i)
+	{
+		if (is_separator(str[i - 1]))
+			if (str[i] >= 97 && str[i] <= 122)
+				str[i] -= 32;
+	}
+	if (str[i - 1] >= 97 && str[i - 1] <= 122)
+		str[i - 1] -= 32;
+	return (str);
+}
 
 /**
- * *capstring(char *) - capitalizes or words of a string
- * @s: pointer
- * Return: char 
+ * is_separator - check whether a character is a separator
+ *
+ * @ch: the character to be checked
+ *
+ * Return: 1 if it's a separator, otherwise 0
  */
-char *cap_string(char *s)
+int is_separator(char ch)
 {
-	int i, j;
-	char delimeters[] = " \t\n,;.!?\"(){}";
+	char separators[] = " \n\t.,;!?\"(){}";
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; separators[i] != '\0'; ++i)
 	{
-		if (s[0] >= 97 && s[0] <= 122)
-			s[0] = s[0] - 32;
-				for (j = 0; delimeters[j] != '\0'; j++)
-					if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
-						s[i + 1] = s[i + 1] - 32;
+		if (separators[i] == ch)
+			return (1);
 	}
-	return (s);
+	return (0);
 }
