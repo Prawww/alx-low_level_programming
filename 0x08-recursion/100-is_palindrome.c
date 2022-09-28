@@ -11,11 +11,11 @@ int is_palindrome(char *s)
 	int l = 0;
 	int h = strlen(s) - 1;
 
-	while (h > l) {
-		if (s[l++] != s[h--]) {
-			printf("%s is not a palindrome\n", s);
-		}
-	}
-	printf("%s is a palindrome\n", s);
-	return (0);
+	if(NULL == s || l < 0 || h < 0)
+		return (0);
+	if(l >= h)
+		return (1);
+	if(s[l] == s[h])
+		return isPalindrome(s, l + 1, h - 1);
+	return 0;
 }
