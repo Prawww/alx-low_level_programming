@@ -2,7 +2,7 @@
 
 /**
  * factorial - compute the factorial of a number
- * @num/: the number to compute
+ * @num: the number to compute
  * Return: length of the string
  */
 int factorial(int num)
