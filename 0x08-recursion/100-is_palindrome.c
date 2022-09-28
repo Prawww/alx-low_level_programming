@@ -16,6 +16,6 @@ int is_palindrome(char *s)
 	if(l >= h)
 		return (1);
 	if(s[l] == s[h])
-		return isPalindrome(s, l + 1, h - 1);
+		return is_palindrome(s);
 	return 0;
 }
