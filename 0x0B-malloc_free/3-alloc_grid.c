@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <limits.h>
+#include <sdlib.h>
 
 /**
  * alloc_grid - returns pointer
@@ -10,6 +11,7 @@
  */
 int **alloc_grid(int width, int height)
 {
+	B
 	int **pointer;
 	int i, j;
 
