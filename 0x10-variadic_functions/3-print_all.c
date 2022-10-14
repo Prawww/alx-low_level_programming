@@ -1,56 +1,112 @@
-#include "3-calc.h"
+#include "variadic_functions.h"
+
 
 /**
- * op_add - add operation
- * @a: first integer
- * @b: second integer
- * Return: sum of the two integers
+ * print_char - Prints a char.
+ * @arg: A list of arguments pointing to
+ * the character to be printed.
 */
-int op_add(int a, int b)
+void print_char(va_list arg)
 {
-	return (a + b);
+	char letter;
+
+	letter = va_arg(arg, int);
+
+	printf("%c", letter);
 }
 
 /**
- * op_sub - subtraction operation
- * @a: first integer
- * @b: second integer
- * Return: difference of the two integers
+ * print_int - Prints an int.
+ * @arg: A list of arguments pointing to
+ * the integer to be printed.
 */
-int op_sub(int a, int b)
+void print_int(va_list arg)
 {
-	return (a - b);
+	int num;
+
+	num = va_arg(arg, int);
+
+	printf("%d", num);
+}
+
+
+/**
+ * print_float - Prints a float.
+ * @arg: A list of arguments pointing to
+ * the float to be printed.
+ */
+void print_float(va_list arg)
+{
+	float num;
+
+	num = va_arg(arg, double);
+
+	printf("%f", num);
+}
+
+
+
+/**
+ * print_string - Prints a string.
+ * @arg: A list of arguments pointing to
+ * the string to be printed. 
+*/
+void print_string(va_list arg)
+{
+	char *str;
+
+	str = va_arg(arg, char *);
+
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+
+	printf("%s", str);
 }
 
 /**
- * op_mul - multiplication operation
- * @a: first integer
- * @b: second integer
- * Return: product of the two integers
+ *print_all - prints anything
+ *@format: format of input
+ *Return: nothing
 */
-int op_mul(int a, int b)
+void print_all(const char * const format, ...)
 {
-	return (a * b);
-}
+	va_list args;
 
-/**
- * op_div - division operation
- * @a: first integer
- * @b: second integer
- * Return: quotient of the two integers
-*/
-int op_div(int a, int b)
-{
-	return (a / b);
-}
+	int i = 0, j = 0;
 
-/**
- * op_mod - division operation
- * @a: first integer
- * @b: second integer
- * Return: remainder of the division of the two integers
-*/
-int op_mod(int a, int b)
-{
-	return (a % b);
+	char *separator = "";
+
+	printer_t funcs[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string}
+	};
+
+	va_start(args, format);
+
+	while (format && (*(format + i)))
+	{
+		j = 0;
+
+		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
+			j++;
+
+		if (j < 4)
+		{
+			printf("%s", separator);
+			funcs[j].print(args);
+			separator = ", ";
+		}
+
+		i++;
+
+	}
+
+	printf("\n");
+
+	va_end(args);
 }

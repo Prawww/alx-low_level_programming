@@ -7,10 +7,8 @@
  *Return: 0 if n is null
  * or sum of parameters in other case
 */
-
 int sum_them_all(const unsigned int n, ...)
 {
-
 	va_list li;
 	int sum = 0;
 	unsigned int i;
@@ -25,5 +23,4 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(li);
 	return (sum);
-
 }
