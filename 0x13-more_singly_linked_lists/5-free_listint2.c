@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * free_listint2 - frees a linked list
@@ -8,19 +9,15 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *cursor;
-	listint_t **temp = head;
+	listint_t *current;
 
-	if (temp != NULL)
-	{
-		while (*head != NULL)
+	if (head == NULL)
+		return;
+
+		while (*head)
 		{
-			cursor = *head;
-			free(cursor);
-			*head = (*head)->next;
+			current = *(head)->next;
+			free(*head);
+			(*head) = current;
 		}
-
-		*temp = NULL;
-
-	}
 }
