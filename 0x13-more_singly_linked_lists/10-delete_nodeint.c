@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stddef.h>
 
 /**
  * delete_nodeint_at_index - deletes a node at an index
