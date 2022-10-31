@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - converts a binary 
+ * binary_to_unit - converts a binary
  * @b: the variable
  * Return: the integer value
  */
@@ -32,7 +32,7 @@ unsigned int binary_to_unit(const char *b)
 */
 int check_valid_string(const char *b)
 {
-	if (b ==NULL)
+	if (b == NULL)
 		return (0);
 	while (*b)
 	{
