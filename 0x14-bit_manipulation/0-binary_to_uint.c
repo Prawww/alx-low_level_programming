@@ -9,7 +9,7 @@ unsigned int binary_to_unit(const char *b)
 {
 	unsigned int decimal = 0;
 	int str_len = 0;
-	int base = 1;
+	int base = 0;
 
 	if (!check_valid_string(b))
 		return (0);
@@ -19,8 +19,8 @@ unsigned int binary_to_unit(const char *b)
 
 	while (str_len)
 	{
-		decimal += ((b[str_len - 1] - '0') * base);
-		base *= 2;
+		decimal |= ((b[str_len - 1] - '0') << base);
+		base++;
 		str_len--;
 	}
 	return (decimal);
