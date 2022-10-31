@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * binary_to_unit - converts a binary
+ * binary_to_uint - converts a binary to a decimal
+ * Description: converts binary to decimal
  * @b: the variable
  * Return: the integer value
  */
