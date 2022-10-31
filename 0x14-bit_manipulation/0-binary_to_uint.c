@@ -5,7 +5,7 @@
  * @b: the variable
  * Return: the integer value
  */
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0;
 	int str_len = 0;
