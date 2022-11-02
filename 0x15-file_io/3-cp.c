@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
 	int fd_from, fd_to;
-	long read_count, wirte_count;
+	long read_count, write_count;
 	char buffer[1024];
 
 	if (argc != 3)
