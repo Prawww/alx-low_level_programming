@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * *_strpbrk - searches a string
- * @s: -string
- * @acceot: - bytes being searched
- * return: character
+ * _strpbrk - searches a string
+ * @s:- string
+ * @accept: - bytes being searched
+ * Return: character pointer
  */
 char *_strpbrk(char *s, char *accept)
 {

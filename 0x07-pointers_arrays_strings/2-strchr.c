@@ -2,12 +2,12 @@
 #include <stddef.h>
 
 /**
- * *_strchr - locates a character in a string
+ * _strchr - locates a character in a string
  * @s: - string pointer
  * @c: - character to search for
  * Return: pointer to string
  */
- char *_strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 

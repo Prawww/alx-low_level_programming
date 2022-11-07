@@ -4,7 +4,7 @@
 
 /**
  * print_chessboard - print chessboard
- * @a: 
+ * @a: - argument
  */
 void print_chessboard(char (*a)[8])
 {
@@ -14,7 +14,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (c = 0; c < 8; c++)
 		{
-			printf("%c",a[b][c]);
+			printf("%c", a[b][c]);
 		}
 		printf("\n");
 	}

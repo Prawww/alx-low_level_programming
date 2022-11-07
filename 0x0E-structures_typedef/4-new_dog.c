@@ -4,16 +4,20 @@
 int _strlen(char *str)
 {
 	int len = 0;
-	while (str)
+	while (str[len] != '\0')
 		len++;
 
 	return (len);
 }
 char *_strcopy(char *dest, char *src)
 {
-	int index = 0;
+	int i = 0;
+	while (src[i] != '\0')
+		i++;
 
-	for (; src[index] ; index++)
+	int index;
+
+	for (index = 0; index < i ; index++)
 		dest[index] = src[index];
 
 	dest[index] = '\0';

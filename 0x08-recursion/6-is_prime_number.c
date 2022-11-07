@@ -2,7 +2,7 @@
 /**
  * check_prime - check whether a number is primt
  * @num: the number to check
- * @i: the number to divide @num 
+ * @i: the number to divide @num
  * Return: 0 (success)
  */
 int check_prime(int num, int i)
