@@ -27,14 +27,12 @@ char *_strcopy(char *dest, char *src)
 	int i = 0;
 
 	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
 		i++;
+	}
 
-	int index;
-
-	for (index = 0; index < i ; index++)
-		dest[index] = src[index];
-
-	dest[index] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
 /**
