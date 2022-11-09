@@ -1,17 +1,31 @@
 #include "dog.h"
 #include  <stdlib.h>
 
+/**
+ * _strlen - length of string
+ * @str: variable
+ * Return: integer value
+ */
 int _strlen(char *str)
 {
 	int len = 0;
+
 	while (str[len] != '\0')
 		len++;
 
 	return (len);
 }
+
+/**
+ * _strcopy - copies a string
+ * @dest: the buffer where the string will be copied
+ * @src: the string to be copied
+ * Return: character string
+ */
 char *_strcopy(char *dest, char *src)
 {
 	int i = 0;
+
 	while (src[i] != '\0')
 		i++;
 
