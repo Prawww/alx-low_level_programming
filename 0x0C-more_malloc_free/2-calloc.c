@@ -5,6 +5,7 @@
  * _calloc - allocates memory
  * @nmemb: integer
  * @size: interger
+ * Return: pointer to a any value or a new line
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
